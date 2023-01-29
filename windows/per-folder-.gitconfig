@@ -1,0 +1,11 @@
+# ~/may/.gitconfig
+[user]
+email = # your email
+name = # your name
+signingkey = ssh-ed25519 # public key for your personal profile
+
+[github]
+user = "" # your github username
+
+[core]
+sshCommand = "C:/Windows/System32/OpenSSH/ssh.exe -i ~/.ssh/may.pub" # public key for your work profile

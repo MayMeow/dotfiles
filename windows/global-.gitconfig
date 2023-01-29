@@ -1,0 +1,43 @@
+[core]
+  # protectNTFS = false
+  excludesfile = ~/.gitignore
+  editor = code -w
+	sshCommand = "C:/Windows/System32/OpenSSH/ssh.exe"
+
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+
+[user]
+	name = May
+	email = may@maymeow.com
+
+[push]
+  default = current
+	autoSetupRemote = true
+
+[pull]
+  rebase = true
+
+[init]
+  defaultBranch = main
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "C:/Users/thema/AppData/Local/1Password/app/8/op-ssh-sign.exe" # 1Password for commit signing
+  
+[commit]
+  gpgsign = true
+
+[includeif "gitdir:~/dev/work/"]
+  path = ~/dev/work/.gitconfig
+
+[includeif "gitdir:~/dev/may/"]
+  path = ~/dev/may/.gitconfig
+
+[includeif "gitdir:~/dev/martin/"]
+  path = ~/dev/martin/.gitconfig
