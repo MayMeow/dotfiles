@@ -11,8 +11,8 @@
 	smudge = git-lfs smudge -- %f
 
 [user]
-	name = May
-	email = may@maymeow.com
+	name = # name
+	email = # email
 
 [push]
   default = current
